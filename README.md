@@ -3,7 +3,9 @@
 ### Project outline
 
 * Even when phones are not connected to WiFi networks, they send out signals called __probe requests__ which look around for known networks.
-* The idea is to use these request signals along with MAC addresses of devices to uniquely __identify__ and __locate__ them in a vicinity.
+* The idea is to use these signals along with stationary routers to uniquely __identify__ and __locate__ wireless devices in a vicinity.
+* Distance of a wireless device from a router can be estimated using the strength of the probe request signal received by the router
+* The devices can be uniquely identified using their MAC addresses.
 
 ### Project milestones
 
