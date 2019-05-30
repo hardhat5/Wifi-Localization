@@ -42,14 +42,18 @@ effectiveness.
 
 __How MAC addresses are assigned__
 
-&rarr; In order to guarantee the uniqueness of MAC addresses across devices the IEEE assigns blocks of addresses to organizations in exchange for a fee.
-&rarr; An Organizationally Unique Identifier (OUI), may be purchased and registered with the IEEE, which gives the organization control of and responsibility for all addresses with a particular three-byte prefix.
-&rarr; The manufacturer is then free to assign the remaining low-order three bytes any value they wish when initializing devices, subject to the condition that they do not use the same MAC address twice.
+&rarr; In order to guarantee the uniqueness of MAC addresses across devices the IEEE assigns blocks of addresses to organizations in exchange for a fee. <br>
+&rarr; An Organizationally Unique Identifier (OUI), may be purchased and registered with the IEEE, which gives the organization control of and responsibility for all addresses with a particular three-byte prefix.<br>
+&rarr; The manufacturer is then free to assign the remaining low-order three bytes any value they wish when initializing devices, subject to the condition that they do not use the same MAC address twice.<br>
 
 ![MAC address](MAC.png)
-
-
 
 * The above system implies that give a MAC address, it is trivial to look up the device manufacturer.
 * To combat this, the IEEE also provides the ability to purchase a “private” OUI which does not include the company’s name in the register.
 * However, this additional privacy feature is not currently used by any major manufacturers.
+
+__Locally assigned addresses__
+
+&rarr; Along with the public and globally unique MAC address, modern devices frequently use locally assigned addresses which are distinguished by a Universal/Local bit in the most significant byte.<br>
+&rarr; Locally assigned addresses are not guaranteed to be unique, and generally are not used in a persistent manner.<br>
+&rarr; Most importantly for this paper, locally assigned addresses may also be used to create randomized MAC addresses as an additional measure of privacy.
