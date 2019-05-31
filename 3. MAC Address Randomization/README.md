@@ -34,6 +34,8 @@ effectiveness.
 * Identifies significant flaws in the majority of randomization implementations on Android devices.
 * __Discovery and implementation of a control frame attack which exposes the global MAC address for all known devices,regardless of OS, manufacturer, device type, or randomization scheme. Furthermore, Android devices can be susceptible to this attack even when the user disables WiFi and/or enables Airplane Mode.__
 
+---
+
 ## 2. Background
 
 ### 2.1 MAC Address
@@ -57,3 +59,9 @@ __Locally assigned addresses__
 &rarr; Along with the public and globally unique MAC address, modern devices frequently use locally assigned addresses which are distinguished by a Universal/Local bit in the most significant byte.<br>
 &rarr; Locally assigned addresses are not guaranteed to be unique, and generally are not used in a persistent manner.<br>
 &rarr; Most importantly for this paper, locally assigned addresses may also be used to create randomized MAC addresses as an additional measure of privacy.
+&rarr; Similar to an OUI, a three-byte Company Identifier (CID) prefix can be purchased from the IEEE, with the agreement that assignment from this address space will not be used for globally unique applications.
+&rarr; The CID always has the local bit set, and is predisposed for use within MAC address randomization schemas.
+
+The discussion of locally assigned addresses above tells us that with the advent of randomized, locally assigned
+MAC addresses that change over time, tracking a wireless device is no longer trivial. Probe requests use locally assigned addresses when the device is in a disas sociated state (not associated with an AP). When a mobile device attempts to connect to an AP, however, it reverts to using its globally unique MAC address. As such, tracking smartphones becomes trivial while
+they are operating in an associated state.

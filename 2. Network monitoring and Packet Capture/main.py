@@ -1,9 +1,6 @@
 import pyshark
 import re
 
-match = 'Type/Subtype: Probe Request (0x0004)'
-macs = '5c:99:60:bf:44:43'
-
 def get_signal_strength(packet):
     layer = packet[1]
     text = str(layer)
