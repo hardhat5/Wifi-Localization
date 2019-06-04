@@ -1,6 +1,6 @@
-# MAC Address Randomization - Paper summary
+# MAC Address Randomization
 
-[Link to the paper](https://arxiv.org/abs/1703.02874)
+The approach to be used is summarized in [this](https://arxiv.org/abs/1703.02874) paper.
 
 ## Abstract
 
@@ -8,7 +8,7 @@
 * However, adoption of this technique has been sporadic and non uniform.
 * This paper reviews the various randomization techniques used and identifies flaws in their implementation.
 
-## 1. Introduction
+## Introduction
 
 * Smartphones have two major modes of communication which can also be used to track them.
 * The first and most obvious is the cellular radio itself.
@@ -36,9 +36,9 @@ effectiveness.
 
 ---
 
-## 2. Background
+## Background
 
-### 2.1 MAC Address
+### MAC Address
 
 * Every NIC on a WiFi capable device has a 48-bit MAC address layer-2 hardware identifier which is designed to be persistent and globally unique.
 

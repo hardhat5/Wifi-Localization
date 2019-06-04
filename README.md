@@ -9,14 +9,14 @@
 
 ### Project milestones
 
-1. Learn about WiFi networks and IEEE 802.11
-2. Network monitoring and packet capture using Aircrack-ng and Wireshark
+1. Learn about WiFi networks
+2. Implement packet capture in Python
 3. Extracting MAC address and signal strength from captured packets
-4. OpenWrt and its uses
-5. Finding devices that are compatible with OpenWrt and support monitor mode
-6. Installing OpenWrt on a device
-7. Estimation of distance from signal strength indicators
-8. Implementing packet capture and distance measurement using OpenWrt
-9. Router placement considerations
+4. Finding devices compatible with OpenWrt and monitor mode
+5. Installing OpenWrt on a device
+6. Making the build envionment for OpenWrt
+7. Implementing packet capture in C
+8. Running the application on the device and troubleshooting
+9. Distance measurement using signal strength
 10. Trilateration(using distances of a point from known points to estimate location)
 11. Combining distance readings from multiple devices

@@ -2,7 +2,7 @@
 
 ### Important definitions
 
-__IEEE 802.11:__ A set of LAN protocols. Specifies the set of media access control(MAC) and physical layer (PHY) protocols for implementing wireless local area network (WLAN) WiFi computer communication in various frequencies, including but not limited to 2.4, 5, and 60 GHz frequency bands.
+__IEEE 802.11:__ IEEE committees are responsible for approving and maintaining the standards for connections, media requirements and communications protocols. Each technology standard is assigned a number that refers to the committee that is responsible for that technology. The committee responsible for the Wireless standards is 802.11. 
 
 __Network interface controller(NIC):__ A computer hardware component that connects a computer to a computer network.
 
